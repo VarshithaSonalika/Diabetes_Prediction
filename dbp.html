@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Diabetes Prediction</title>
+        <link rel="stylesheet" href='dbp.css'>
+    </head>
+    <body>
+            <div class="form-box">
+                <h1>DIABETES PREDICTION</h1>
+                <form action='/predict' method="post" class="input-group">
+                    <input class="form-input" type="text" name="Pregnancies" placeholder="No.of pregnancies"><br>
+                    <input class="form-input" type="text" name="Glucose" placeholder="Glucose(mg/dL)"><br>
+                    <input class="form-input" type="text" name="BloodPressure" placeholder="BloodPressure(mmHg)"><br>
+                    <input class="form-input" type="text" name="SkinThickness" placeholder="SkinThickness(mm)"><br>
+                    <input class="form-input" type="text" name="Insulin" placeholder="Insulin(IU/ml)"><br>
+                    <input class="form-input" type="text" name="BMI" placeholder="BMI(kg/m^2"><br>
+                    <input class="form-input" type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction"><br>
+                    <input class="form-input" type="text" name="Age" placeholder="Age(years)"><br>
+                    <button type="submit" class='submit-btn'>Predict</button>
+                </form>
+                <br>
+                <br>
+            </div>   
+    </body>
+</html>
+<style>
+    body
+{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background-color:rgba(0,0,0)
+}
+.form-box
+{
+    margin-top: 10px;
+    height:680px;
+    width: 425px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: rgba(225,225,225);
+    padding: 15px;
+    margin: 8% auto 0;
+    text-align:center;
+}
+.form-box hl
+{
+    color:rgba(225,0,0,0.2);
+    margin-bottom: 10px;
+}
+.input-group
+{
+    top:240px;
+    position:absolute;
+    box-align:center;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    width:400px;
+    transition: .3s;
+}
+.form-input
+{
+    border-radius:20px;
+    padding: 10px;
+    margin:10px 0;
+    width: 100%;
+    border: 1px solid rgba(0,0,40);
+    outline: none;
+}
+button
+{
+    color: rgba(225,225,225);
+    width:400px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    background: linear-gradient(rgba(64, 64, 94, 0.5), rgb(0,0,0,0.6));
+    border: none;
+    outline: none;
+    cursor: pointer;  
+}
+.submit-btn:hover
+{
+    background: rgb(0,0,0,0.3);    
+    border-radius: 3px
+}
+.submit-btn
+{
+    background-color:rgba(0,0,0,0.8);   
+}
+</style>
